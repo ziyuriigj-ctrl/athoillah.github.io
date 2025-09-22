@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="page_title">CV - Muhammad Athoillah Solahuddin Al Ayyubi</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    color: #222;
+  }
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  header h1 {
+    margin: 10px 0;
+    font-size: 28px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  .lang-switch {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .lang-switch button {
+    margin: 0 5px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #003366;
+    color: #fff;
+    cursor: pointer;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  .left, .right {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  h2 {
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .foto {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  .foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #003366;
+    object-fit: cover;
+    animation: bounce 3s infinite;
+  }
+  @keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .skills .bar {
+    background: #ddd;
+    border-radius: 20px;
+    margin: 8px 0;
+    overflow: hidden;
+  }
+  .skills .bar span {
+    display: block;
+    height: 20px;
+    background: #003366;
+    text-align: right;
+    padding-right: 10px;
+    color: #fff;
+    line-height: 20px;
+  }
+  canvas {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="foto">
+    <img src="ain.png" alt="Foto Profil">
+  </div>
+  <h1 data-i18n="name">Muhammad Athoillah Solahuddin Al Ayyubi</h1>
+  <p data-i18n="kelas">XI TKJ 1 • Teknik Komputer & Jaringan</p>
+</header>
+
+<div class="lang-switch">
+  <button onclick="setLanguage('id')">Indonesia</button>
+  <button onclick="setLanguage('en')">English</button>
+  <button onclick="setLanguage('jv')">Jawa</button>
+  <button onclick="setLanguage('ar')">عربي</button>
+</div>
+
+<div class="container">
+  <!-- Kiri -->
+  <div class="left">
+    <h2 data-i18n="profil_title">Profil</h2>
+    <p data-i18n="profil_text">Saya memiliki minat di bidang IT, khususnya Teknik Komputer & Jaringan. Memiliki dasar perakitan komputer, jaringan LAN, dan troubleshooting perangkat.</p>
+
+    <h2 data-i18n="identitas_title">Identitas</h2>
+    <p><b data-i18n="nama">Nama:</b> Muhammad Athoillah Solahuddin Al Ayyubi</p>
+    <p><b data-i18n="ttl">Tempat/Tanggal Lahir:</b> Pekalongan, 23 September 2009</p>
+    <p><b data-i18n="alamat">Alamat:</b> Perumahan GTA, Jalan Gambir No. 21</p>
+    <p><b>Email:</b> ainimoet20@gmail.com</p>
+    <p><b data-i18n="telp">Telp:</b> 0877-xxxx-xxxx</p>
+
+    <h2 data-i18n="skills_title">Keterampilan</h2>
+    <ul>
+      <li>Editing Foto & Video</li>
+      <li>Alight Motion</li>
+      <li>CapCut</li>
+      <li>Canva</li>
+    </ul>
+
+    <h2 data-i18n="hobi_title">Hobi</h2>
+    <ul>
+      <li data-i18n="hobi1">Menonton Anime</li>
+      <li data-i18n="hobi2">Bermain Game</li>
+      <li data-i18n="hobi3">Olahraga</li>
+      <li data-i18n="hobi4">Editing Konten</li>
+    </ul>
+
+    <h2 data-i18n="cita_title">Cita-cita</h2>
+    <p data-i18n="cita_text">Ingin membahagiakan orang tua melalui prestasi akademik dan melanjutkan kuliah, sehingga bisa meraih pekerjaan yang layak dan bermanfaat.</p>
+
+    <h2 data-i18n="kontak_title">Kontak</h2>
+    <p>Email: ainimoet20@gmail.com<br>
+       Telp: 0877-xxxx-xxxx<br>
+       TikTok: @uzukimyistrijir<br>
+       Instagram: @uzuki_myistri</p>
+       
+    <h2 data-i18n="life_title">Perjalanan Hidup</h2>
+    <p data-i18n="life_text">Sejak kecil saya tinggal di Pekalongan, bersekolah di SDN Tirto 03, kemudian melanjutkan pendidikan di SMP N 15 Pekalongan, dan kini bersekolah di SMK Ma'arif NU Tirto.</p>
+
+    <h2 data-i18n="stat_title">Statistik Skill</h2>
+    <div class="skills">
+      <p>Editing</p>
+      <div class="bar"><span style="width:80%">80%</span></div>
+      <p>Gaming</p>
+      <div class="bar"><span style="width:65%">65%</span></div>
+      <p>Bahasa Inggris</p>
+      <div class="bar"><span style="width:90%">90%</span></div>
+      <p>Disiplin</p>
+      <div class="bar"><span style="width:75%">75%</span></div>
+    </div>
+  </div>
+
+  <!-- Kanan -->
+  <div class="right">
+    <h2 data-i18n="edu_title">Riwayat Pendidikan</h2>
+    <ul>
+      <li>2015 – 2021 : SD Negeri Tirto 03</li>
+      <li>2021 – 2024 : SMP Negeri 15 Pekalongan</li>
+      <li>2024 – 2027 : SMK Ma’arif NU Tirto</li>
+    </ul>
+
+    <h2 data-i18n="hope_title">Harapan & Masa Depan</h2>
+    <p data-i18n="hope_text">Membangun karir yang sukses, memperoleh pengalaman kerja yang luas, dan bekerja di lingkungan yang profesional.</p>
+
+    <h2 data-i18n="prestasi_title">Prestasi</h2>
+    <p>Juara 3 Turnamen Mobile Legend SMK Muhammadiyah Bligo</p>
+
+    <h2 data-i18n="org_title">Organisasi</h2>
+    <p data-i18n="org_text">(Belum ada pengalaman organisasi)</p>
+
+    <h2 data-i18n="chart_title">Diagram Minat</h2>
+    <canvas id="pieChart" width="300" height="300"></canvas>
+    <canvas id="barChart" width="400" height="250"></canvas>
+  </div>
+</div>
+
+<footer>
+  <span data-i18n="motto">Motto Hidup: "Hidup itu bukan soal siapa yang paling cepat, tapi siapa yang tetap kuat dan konsisten sampai akhir"</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // Chart.js
+  const ctxPie = document.getElementById('pieChart');
+  new Chart(ctxPie, {
+    type: 'pie',
+    data: {
+      labels: ['Anime','Game','Editing','Music','Sport'],
+      datasets: [{
+        data: [25,45,5,15,10],
+        backgroundColor: ['#ff9999','#66b3ff','#99ff99','#ffcc99','#c2c2f0']
+      }]
+    }
+  });
+
+  const ctxBar = document.getElementById('barChart');
+  new Chart(ctxBar, {
+    type: 'bar',
+    data: {
+      labels: ['Anime','Game','Editing','Music','Sport'],
+      datasets: [{
+        data: [25,45,5,15,10],
+        backgroundColor: '#003366'
+      }]
+    },
+    options: {
+      scales: {
+        y: { beginAtZero: true }
+      }
+    }
+  });
+
+  // Bahasa
+  const translations = {
+    id: {
+      page_title: "CV - Muhammad Athoillah Solahuddin Al Ayyubi",
+      name: "Muhammad Athoillah Solahuddin Al Ayyubi",
+      kelas: "XI TKJ 1 • Teknik Komputer & Jaringan",
+      profil_title: "Profil",
+      profil_text: "Saya memiliki minat di bidang IT, khususnya Teknik Komputer & Jaringan. Memiliki dasar perakitan komputer, jaringan LAN, dan troubleshooting perangkat.",
+      identitas_title: "Identitas",
+      nama: "Nama:",
+      ttl: "Tempat/Tanggal Lahir:",
+      alamat: "Alamat:",
+      telp: "Telp:",
+      skills_title: "Keterampilan",
+      hobi_title: "Hobi",
+      hobi1: "Menonton Anime",
+      hobi2: "Bermain Game",
+      hobi3: "Olahraga",
+      hobi4: "Editing Konten",
+      cita_title: "Cita-cita",
+      cita_text: "Ingin membahagiakan orang tua melalui prestasi akademik dan melanjutkan kuliah, sehingga bisa meraih pekerjaan yang layak dan bermanfaat.",
+      kontak_title: "Kontak",
+      life_title: "Perjalanan Hidup",
+      life_text: "Sejak kecil saya tinggal di Pekalongan, bersekolah di SDN Tirto 03, kemudian melanjutkan pendidikan di SMP N 15 Pekalongan, dan kini bersekolah di SMK Ma'arif NU Tirto.",
+      stat_title: "Statistik Skill",
+      edu_title: "Riwayat Pendidikan",
+      hope_title: "Harapan & Masa Depan",
+      hope_text: "Membangun karir yang sukses, memperoleh pengalaman kerja yang luas, dan bekerja di lingkungan yang profesional.",
+      prestasi_title: "Prestasi",
+      org_title: "Organisasi",
+      org_text: "(Belum ada pengalaman organisasi)",
+      chart_title: "Diagram Minat",
+      motto: "Motto Hidup: \"Hidup itu bukan soal siapa yang paling cepat, tapi siapa yang tetap kuat dan konsisten sampai akhir\""
+    },
+    en: {
+      page_title: "CV - Muhammad Athoillah Solahuddin Al Ayyubi",
+      name: "Muhammad Athoillah Solahuddin Al Ayyubi",
+      kelas: "XI TKJ 1 • Computer & Network Engineering",
+      profil_title: "Profile",
+      profil_text: "I have an interest in IT, especially Computer & Network Engineering. I have basic skills in assembling computers, LAN networking, and troubleshooting devices.",
+      identitas_title: "Identity",
+      nama: "Name:",
+      ttl: "Place/Date of Birth:",
+      alamat: "Address:",
+      telp: "Phone:",
+      skills_title: "Skills",
+      hobi_title: "Hobbies",
+      hobi1: "Watching Anime",
+      hobi2: "Playing Games",
+      hobi3: "Sports",
+      hobi4: "Content Editing",
+      cita_title: "Aspiration",
+      cita_text: "I want to make my parents proud through academic achievements and continue my studies, so I can get a decent and useful job.",
+      kontak_title: "Contact",
+      life_title: "Life Journey",
+      life_text: "Since childhood I have lived in Pekalongan, studied at SDN Tirto 03, then continued at SMP N 15 Pekalongan, and now study at SMK Ma'arif NU Tirto.",
+      stat_title: "Skill Statistics",
+      edu_title: "Education",
+      hope_title: "Hopes & Future",
+      hope_text: "To build a successful career, gain broad work experience, and work in a professional environment.",
+      prestasi_title: "Achievements",
+      org_title: "Organization",
+      org_text: "(No organizational experience yet)",
+      chart_title: "Interest Chart",
+      motto: "Life Motto: \"Life is not about who is the fastest, but who stays strong and consistent until the end\""
+    },
+    jv: {
+      page_title: "CV - Muhammad Athoillah Solahuddin Al Ayyubi",
+      name: "Muhammad Athoillah Solahuddin Al Ayyubi",
+      kelas: "XI TKJ 1 • Teknik Komputer & Jaringan",
+      profil_title: "Profil",
+      profil_text: "Aku seneng ing bidang IT, utamane Teknik Komputer & Jaringan. Duwe dasar ngrakit komputer, jaringan LAN, lan ngatasi masalah piranti.",
+      identitas_title: "Identitas",
+      nama: "Jeneng:",
+      ttl: "Panggonan/Tanggal Lair:",
+      alamat: "Alamat:",
+      telp: "Telpon:",
+      skills_title: "Ketrampilan",
+      hobi_title: "Hobi",
+      hobi1: "Nonton Anime",
+      hobi2: "Dolanan Game",
+      hobi3: "Olahraga",
+      hobi4: "Editing Konten",
+      cita_title: "Cita-cita",
+      cita_text: "Kepingin nggawe wong tuwa bangga liwat prestasi sekolah lan nerusake kuliah, ben bisa entuk gawean sing pantes lan migunani.",
+      kontak_title: "Kontak",
+      life_title: "Perjalanan Urip",
+      life_text: "Saka cilik aku urip neng Pekalongan, sekolah neng SDN Tirto 03, terus SMP N 15 Pekalongan, saiki sekolah neng SMK Ma'arif NU Tirto.",
+      stat_title: "Statistik Ketrampilan",
+      edu_title: "Riwayat Pendhidhikan",
+      hope_title: "Pangarep-arep & Masa Depan",
+      hope_text: "Nggawe karir sing sukses, entuk pengalaman kerja akeh, lan kerja neng lingkungan profesional.",
+      prestasi_title: "Prestasi",
+      org_title: "Organisasi",
+      org_text: "(Durung nduwe pengalaman organisasi)",
+      chart_title: "Diagram Minat",
+      motto: "Motto Urip: \"Urip kuwi dudu sapa sing paling cepet, nanging sapa sing tetep kuwat lan konsisten nganti pungkasan\""
+    },
+    ar: {
+      page_title: "السيرة الذاتية - محمد عطيالله صلاح الدين الأيوبي",
+      name: "محمد عطيالله صلاح الدين الأيوبي",
+      kelas: "الصف الحادي عشر • هندسة الحاسوب والشبكات",
+      profil_title: "الملف الشخصي",
+      profil_text: "لدي اهتمام في مجال تكنولوجيا المعلومات، وخاصة هندسة الحاسوب والشبكات. أمتلك أساسيات تركيب الحاسوب، شبكات LAN، وحل مشكلات الأجهزة.",
+      identitas_title: "الهوية",
+      nama: "الاسم:",
+      ttl: "مكان/تاريخ الميلاد:",
+      alamat: "العنوان:",
+      telp: "الهاتف:",
+      skills_title: "المهارات",
+      hobi_title: "الهوايات",
+      hobi1: "مشاهدة الأنمي",
+      hobi2: "لعب الألعاب",
+      hobi3: "الرياضة",
+      hobi4: "تحرير المحتوى",
+      cita_title: "الطموح",
+      cita_text: "أرغب في إسعاد والديّ من خلال الإنجازات الأكاديمية ومواصلة الدراسة، حتى أتمكن من الحصول على وظيفة لائقة ومفيدة.",
+      kontak_title: "الاتصال",
+      life_title: "رحلة الحياة",
+      life_text: "منذ الطفولة عشت في ب Pekalongan، درست في SDN Tirto 03، ثم تابعت في SMP N 15 Pekalongan، والآن أدرس في SMK Ma'arif NU Tirto.",
+      stat_title: "إحصائيات المهارات",
+      edu_title: "التعليم",
+      hope_title: "الآمال والمستقبل",
+      hope_text: "بناء مسيرة مهنية ناجحة، اكتساب خبرة عمل واسعة، والعمل في بيئة مهنية.",
+      prestasi_title: "الإنجازات",
+      org_title: "المنظمات",
+      org_text: "(لا توجد خبرة تنظيمية حتى الآن)",
+      chart_title: "مخطط الاهتمامات",
+      motto: "شعار الحياة: \"الحياة ليست حول من هو الأسرع، بل من يبقى قوياً وثابتاً حتى النهاية\""
+    }
+  };
+
+  function setLanguage(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (translations[lang][key]) {
+        el.textContent = translations[lang][key];
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
